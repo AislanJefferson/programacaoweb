@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        var frutas = [];
+        var continuar = "n";
+
+        do {
+            var fruta = prompt("Digite o nome de uma Fruta: ");
+            frutas.push(fruta);
+            continuar = (prompt("Deseja continuar? Sim (Sim, s, S) ou Não (n):") || "").toLowerCase();
+
+        } while (continuar.includes("s"));
+
+        console.log("For convencional");
+        for (var i = 0; i < frutas.length; i++) {
+            console.log(frutas[i]);
+        }
+
+        console.log("For otimizado");
+        for (var i = 0, tamanho = frutas.length; i < tamanho; i++) {
+            console.log(frutas[i]);
+        }
+
+        console.log("for..in");
+        for (var i in frutas) {
+            console.log(frutas[i]);
+        }
+
+        console.log("For..of");
+        for (var fruta of frutas) {
+            console.log(fruta);
+        }
+
+    </script>
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+</body>
+
+</html>
