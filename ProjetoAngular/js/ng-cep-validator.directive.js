@@ -1,5 +1,5 @@
 //Define a diretiva atributo ngCepValidator que sera normalizada como ng-cep-validator no html
-angular.module("app").directive("ngCepValidator", function (CepService, $rootScope) {
+app.directive("ngCepValidator", function (CepService, $rootScope) {
     return {
         restrict: "A",
         require: "ngModel",

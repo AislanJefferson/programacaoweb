@@ -1,5 +1,5 @@
 //Define diretiva ngZumbiSubmit requisitando o objeto pai ser um form que que executa a fc submit se form valido ou alerta se form invalido
-angular.module("app").directive('ngZumbiSubmit', function () {
+app.directive('ngZumbiSubmit', function () {
     return {
         restrict: "E",
         require: '^form',
@@ -12,7 +12,7 @@ angular.module("app").directive('ngZumbiSubmit', function () {
                 if (formCtrl.$valid) {
                     $scope.submit();
                 } else {
-                    alert("invalido")
+                    alert("invalido");
                 }
             })
         }

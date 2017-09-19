@@ -1,5 +1,5 @@
 //Define controller "zumbisCtrl" no modulo "app" 
-angular.module("app").controller("zumbisCtrl", function ($scope, $rootScope) {
+app.controller("zumbisCtrl", function ($scope, $rootScope) {
 
     $rootScope.$on("cep", function (event, data) {
         $scope.ocorrencia.bairro = data.bairro;

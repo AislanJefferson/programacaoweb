@@ -1,5 +1,5 @@
 //Define diretiva atributo "ngBlur" que aplica/remove a classe css error durante o blur caso o model associado seja invalido/valido
-angular.module("app").directive('ngBlur', function () {
+app.directive('ngBlur', function () {
     return {
         restrict: "A",
         require: 'ngModel',
